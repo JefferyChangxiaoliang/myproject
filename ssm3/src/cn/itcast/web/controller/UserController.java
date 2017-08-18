@@ -22,6 +22,9 @@ public class UserController {
 		user.setUsername("张信哲");
 		user.setDate(new Date());
 		userService.saveUser(user);
+		
+		
+		System.out.println("邱伟最美");
 		return "success";
 	}
 	
