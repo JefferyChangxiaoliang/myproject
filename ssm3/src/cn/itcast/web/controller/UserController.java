@@ -23,7 +23,7 @@ public class UserController {
 		user.setDate(new Date());
 		userService.saveUser(user);
 		
-		
+		System.out.println("东东最美！！");
 		System.out.println("邱伟最美");
 		return "success";
 	}

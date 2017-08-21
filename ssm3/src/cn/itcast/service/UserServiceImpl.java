@@ -6,6 +6,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cn.itcast.mapper.UserMapper;
 import cn.itcast.pojo.User;
+/**
+ * 
+ * @author changgangliang
+ *	2017年8月21日
+ *  2017
+ */
 @Service
 @Transactional
 public class UserServiceImpl implements UserService {
@@ -21,6 +27,7 @@ public class UserServiceImpl implements UserService {
 		
 		userMapper.saveUser(user);
 		//int i=1/0;
+		throw new RuntimeException();
 	}
 	
 }
